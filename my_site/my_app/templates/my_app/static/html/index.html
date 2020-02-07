@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Marioclub</title>
+</head>
+<body>
+<!--<h1>Heading One</h1>-->
+<!--<div style="background-image: url('media/ARD-57x57.png'); ;">-->
+<!--    <ul>-->
+<!--        <li>Frank</li>-->
+<!--        <li>Ralf</li>-->
+<!--        <li>Didi</li>-->
+<!--    </ul>-->
+<!--</div>-->
+<!--<blockquote cite="http://www.oscarwildesite.com"> Zitat</blockquote>-->
+<!--<div>-->
+<!--    <ol>-->
+<!--        <li><strong>Frank</strong></li>-->
+<!--        <li><small>Ralf</small></li>-->
+<!--        <li>Didi</li>-->
+<!--        <a href="https://www.google.de">Link</a>-->
+<!--    </ol>-->
+<!--</div>-->
+<!--<div style="background-image: url('static/IMG_5551.JPG'); width:1000px;height:1000px;">-->
+<!--    <ol>-->
+<!--        <li><strong>Frank</strong></li>-->
+<!--        <li><small>Ralf</small></li>-->
+<!--        <li>Didi</li>-->
+<!--    </ol>-->
+<!--</div>-->
+<!--<img src="media/IMG_5551.JPG" alt="leer">-->
+<!--<hr>-->
+<!--<h1>HTML Forms</h1>-->
+<!--<hr>-->
+<!--<form action="">-->
+<!--    <label for="username">enter username:</label>-->
+<!--    <input type="text" id="username" name="username">-->
+<!--    <br><br>-->
+<!--    <label for="email">enter e-mail:</label>-->
+<!--    <input type="email" id="email" name="e-mail" placeholder="frank.jordan@a1.net">-->
+<!--    <br><br>-->
+<!--    <label for="password">enter password:</label>-->
+<!--    <input type="password" id="password" name="password">-->
+<!--    <br><br>-->
+<!--    <p>Select your age:</p>-->
+<!--    <form action="">-->
+<!--        <input type="radio" name="age" value="0-25" id="option-1">-->
+<!--        <label for="option-1">0-25</label>-->
+<!--        <input type="radio" name="age" value="26-50" id="option-2">-->
+<!--        <label for="option-1">26-50</label>-->
+<!--        <input type="radio" name="age" value="50+" id="option-3">-->
+<!--        <label for="option-1">50+</label>-->
+<!--    </form>-->
+<!--    <br><br>-->
+
+<!--    <label for="question">Security Queation</label>-->
+<!--    <select name="question" id="question">-->
+<!--        <option value="q1">1 plus 3</option>-->
+<!--        <option value="q1">4 times 6</option>-->
+<!--        <option value="q3">9 devided by 3</option>-->
+<!--    </select>-->
+<!--    <br><br>-->
+<!--    <label for="answer"></label>-->
+<!--    <input type="text" id="answer" name="amswer">-->
+<!--    <br><br>-->
+<!--    <label for="bio">Your biog</label><br>-->
+<!--    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you...."></textarea>-->
+<!--    <br>-->
+<!--    <input type="submit" value="Submit">-->
+<!--    <br>-->
+<!--    <hr>-->
+<!--    <br>-->
+<!--    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus-->
+<!--        <br>est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>-->
+
+
+<!--    <hr>-->
+<!--    <hr>-->
+<!--    <h2 >Inline elements</h2>-->
+
+<!--    <span class="error">span tag</span>-->
+<!--    <em>em tag</em>-->
+<!--    <a href="">anchor tag</a>-->
+<!--    <span>span tag</span>-->
+
+<!--    <hr>-->
+<!--    <h2 class="error">block level elements</h2>-->
+<!--    <br>-->
+<!--    <div>div tag</div>-->
+<!--    <br>-->
+<!--    <div>another div tag</div>-->
+<!--    <br>-->
+<!--    <h3>h3 tag</h3>-->
+<!--    <p>paragraph tag</p>-->
+<!--    <ul>-->
+<!--        <li>li tgag</li>-->
+<!--        <li>another li tag</li>-->
+<!--    </ul>-->
+<!--<main></main>-->
+<!--<section></section>-->
+<!--<article></article>-->
+<!--<aside></aside>-->
+<!--<header></header>-->
+<!--<footer></footer>-->
+
+
+<!--</form>-->
+<header>
+    <h1>Marioclub</h1>
+</header>
+<section class="banner">
+    <img src="/static/banner.png" alt="Mario Welcome Banner">
+    <div class="welcome">
+        <h2>Welcome to <br><span>Marioclub</span></h2>
+    </div>
+</section>
+<nav class="main-nav">
+    <ul>
+        <li><a href="{% url 'my_website' %}" class="join">My Website</a></li>
+        <li><a href="{% url 'flex_box' %}">Latest News</a></li>
+        <li><a href="{% url 'menu_flexbox' %}">Menu w/ Flexbox</a></li>
+        <li><a href="{% url 'css_grid' %}">CSS Grid</a></li>
+        <li><a href="{% url 'javascript' %}">JavaScript</a></li>
+        <li><a href="{% url 'ninjaquiz' %}">NinjaQuiz</a></li>
+         <li><a href="{% url 'todolist' %}">TodoList</a></li>
+
+
+
+
+
+    </ul>
+</nav>
+<main>
+    <article>
+        <h2>It's a me, Mario</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+            feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+            delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+            possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+    </article>
+    <ul class="images">
+        <li><img src="/static/thumb-1.png" alt="mario-thumb-1"></li>
+        <li><img src="/static/thumb-2.png" alt="mario-thumb-2"></li>
+    </ul>
+</main>
+<section class="join">
+    <h2>Join Today</h2>
+    <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+        commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+        possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+    <form action="#">
+        <input type="email" name="email" placeholder="max.mustermann@web.de" required>
+    </form>
+</section>
+<footer>
+    <p class="copyright">Copyright 2019 Marioclub</p>
+</footer>
+
+</body>
+</html>

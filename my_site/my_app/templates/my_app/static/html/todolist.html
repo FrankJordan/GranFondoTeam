@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64c52df669.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/todolist.css">
+
+    <title>ToDos</title>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://www.kirchmair-cycling.com/wp-content/uploads/2016/07/KirchmairCycling_4c_weiss_250dpi.png" alt="">
+    <header class="text-center text-light my-4">
+        <h1 class="mb-4">ToDoList</h1>
+        <form action="" class="search">
+            <input type="text" class="form-control m-auto" name="search" placeholder="search toTos">
+        </form>
+    </header>
+
+
+<ul class="list-group todos mx-auto text-light">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>do a workout on zwift</span>
+        <i class="far fa-trash-alt delete"></i>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>hang into a race on zwift</span>
+        <i class="far fa-trash-alt delete"></i>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>don't forget do drink in between</span>
+        <i class="far fa-trash-alt delete"></i>
+    </li>
+</ul>
+
+<form action="" class="add text-center my-4">
+    <label for="" class="text-light">Add a new todo</label>
+    <input type="text" class="form-control m-auto" name="add">
+</form>
+
+</div>
+<script src="static/todolist.js"></script>
+</body>
+</html>

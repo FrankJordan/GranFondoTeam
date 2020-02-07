@@ -1,0 +1,87 @@
+html, body{
+height:100%;
+width:100%;
+overflow:hidden;
+margin:0;
+}
+
+.grass, .sky, .road{
+position:relative;
+}
+
+.sky {
+height:40%;
+background-color: blue;}
+
+
+.grass {
+height:30%;
+background: green;}
+
+
+.road{
+height:30%;
+background:black;
+box-sizing:border-box;
+border-top: 10px solid grey;
+border-bottom: 10px solid grey;
+width:100%
+}
+
+.lines{
+box-sizing:border-box;
+border: 5px dashed white;
+height:0px;
+width:100%;
+position:absolute;
+top: 85%;
+}
+
+.bike{
+position:absolute;
+top:58%;
+animation: drive 3s both infinite linear, jump 0.3s 1.5s ease infinite;
+
+}
+
+.run{
+position:absolute;
+top:64%;
+animation-name:run;
+animation-duration:3.3s;
+animation-fill-mode:forwards;
+animation-iteration-count:infinite;
+
+
+}
+
+
+
+
+@keyframes drive{
+ from{
+ transform: translateX(-100px);
+ }
+ to{
+ transform: translateX(1200px);
+ }
+
+}
+
+@keyframes run{
+ from{
+ transform: translateX(-500px);
+ }
+ to{
+ transform: translateX(1200px);
+ }
+
+}
+
+
+@keyframes jump
+{
+0% {top:64%}
+50% {top:54%}
+100% {top:64%}
+}
